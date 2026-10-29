@@ -1,0 +1,31 @@
+1
+00:00:00,000 --> 00:00:12,152
+This is Phantom Shell, a terminal-first system investigator. It combines live measurements with a locally running Gemma model, while keeping the evidence and interpretation visibly separate.
+
+2
+00:00:12,472 --> 00:00:27,089
+PHANTOM SHELL sends prompts only to the local Ollama service. There is no hosted model fallback. The model cannot run arbitrary commands; Python selects from a short, read-only list of diagnostic tools.
+
+3
+00:00:27,409 --> 00:00:41,341
+The doctor command checks the configured Ollama endpoint and exact model tag. On this machine it confirms that the already-installed Gemma 4 E4B model is available at localhost, with no cloud LLM configured.
+
+4
+00:00:41,661 --> 00:00:56,472
+This screen shows illustrative sample values, not data from this computer. The live collector reads CPU, memory, disk, and uptime locally. These samples are examples, not system findings.
+
+5
+00:00:56,792 --> 00:01:09,234
+The demo fixture exercises three threshold rules using invented values. Every result is clearly labeled TEST SCENARIO, and the fixture does not save those events as real system findings.
+
+6
+00:01:09,554 --> 00:01:25,926
+A real investigation completed using the preinstalled Gemma model. PHANTOM SHELL displayed measured facts separately from two model hypotheses, and validated their evidence IDs. This demo omits process names and identifiers for privacy.
+
+7
+00:01:26,246 --> 00:01:45,462
+Facts are generated from measured fields. Model hypotheses must cite real evidence IDs, and uncertain answers stay inconclusive. Story Mode is labeled as fiction. The application has no process-kill, file-delete, install, or settings-change tool.
+
+8
+00:01:45,782 --> 00:02:00,853
+To begin, run doctor, inspect status, then ask a question about memory. The demo fixture is available for a safe synthetic walkthrough. This verified project run used the model already installed on the machine.
