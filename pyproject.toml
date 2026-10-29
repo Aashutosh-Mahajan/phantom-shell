@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "phantom-shell"
+version = "0.1.0"
+description = "A local-first, evidence-grounded system investigator for Windows."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = ["psutil>=5.9,<8", "rich>=13,<15"]
+classifiers = [
+  "Environment :: Console",
+  "Operating System :: Microsoft :: Windows",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9"]
+
+[project.scripts]
+phantom = "phantom_shell.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["phantom_shell*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra -p no:asyncio -p no:anyio"
