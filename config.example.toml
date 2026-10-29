@@ -1,0 +1,14 @@
+[phantom]
+ollama_url = "http://localhost:11434"
+model = "gemma4:e4b"
+poll_seconds = 5
+cpu_threshold = 85
+cpu_consecutive_samples = 3
+memory_threshold = 90
+disk_free_threshold = 10
+process_memory_delta_bytes = 262144000
+history_retention_days = 30
+log_level = "WARNING"
+story_mode = false
+plain_mode = false
+timeout_seconds = 90
