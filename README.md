@@ -42,6 +42,8 @@ phantom ask "What is using my memory?"
 
 `phantom doctor` checks the local Ollama service and the exact configured model tag. Start Ollama before running an investigation. If the model tag differs, use `phantom config init` and edit `%USERPROFILE%\.phantom-shell\config.toml`.
 
+To confirm the default model is installed before the first investigation, run `ollama show gemma4:e4b`. If Ollama reports that the model is missing, install it separately with `ollama pull gemma4:e4b`; PHANTOM SHELL itself never downloads models.
+
 ## Commands
 
 | Command | What it does |
